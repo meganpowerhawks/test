@@ -1,6 +1,7 @@
 package org.usfirst.frc.team1111.robot;
 
 
+import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.SampleRobot;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Joystick;
@@ -20,7 +21,8 @@ import edu.wpi.first.wpilibj.Timer;
  * don't. Unless you know what you are doing, complex code will be much more difficult under
  * this system. Use IterativeRobot or Command-Based instead if you're new.
  */
-public class Robot extends SampleRobot {
+public class Robot extends IterativeRobot
+ {
     RobotDrive myRobot;  // class that handles basic drive operations
     Joystick leftStick;  // set to ID 1 in DriverStation
     Joystick rightStick; // set to ID 2 in DriverStation
@@ -42,5 +44,5 @@ public class Robot extends SampleRobot {
             Timer.delay(0.005);		// wait for a motor update time
         }
     }
-
+// THIS IS SPARTA!
 }
