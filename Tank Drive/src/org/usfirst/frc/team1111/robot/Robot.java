@@ -33,7 +33,7 @@ public class Robot extends IterativeRobot
         rightStick = new Joystick(1);
     }
 
-    
+    //JOHN CENA
     /**
      * Runs the motors with tank steering.
      */
@@ -43,6 +43,8 @@ public class Robot extends IterativeRobot
         	myRobot.tankDrive(leftStick, rightStick);
             Timer.delay(0.005);		// wait for a motor update time
         }
+        
+        //Who knows what we will do
     }
 // THIS IS SPARTA!
     //THIS IS SPARTA MK. 2!
