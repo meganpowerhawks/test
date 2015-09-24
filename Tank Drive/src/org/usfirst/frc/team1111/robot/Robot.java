@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.Timer;
  * This is a demo program showing the use of the RobotDrive class, specifically it 
  * contains the code necessary to operate a robot with tank drive.
  *
- * The VM is configured to automatically run this class, and to call the
+ * The VM is configured TO automatically run this class, and to call the
  * functions corresponding to each mode, as described in the SampleRobot
  * documentation. If you change the name of this class or the package after
  * creating this project, you must also update the manifest file in the resource
