@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Timer;
 
 /**
- * This is a demo program showing the use of the RobotDrive class, specifically it 
+ * This is a demo PROGRAM showing the use of the RobotDrive class, specifically it 
  * contains the code necessary to operate a robot with tank drive.
  *
  * The VM is configured TO automatically run this class, and to call the
