@@ -4,7 +4,8 @@ package org.usfirst.frc.team1111.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
-import edu.wpi.first.wpilibj.Victor;
+import edu.wpi.first.wpilibj.TalonSRX;
+import edu.wpi.first.wpilibj.TalonSRX;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
@@ -26,8 +27,8 @@ public class Robot extends IterativeRobot {
 
     Command autonomousCommand;
     RobotDrive drive;
-    Joystick left, right;
-    Victor MFP, MRP, MFS, MRS;
+    Joystick port, starboard;
+    TalonSRX MFP, MRP, MFS, MRS;
 
     /**
      * This function is run when the robot is first started up and should be
@@ -37,15 +38,15 @@ public class Robot extends IterativeRobot {
 		oi = new OI();
         // instantiate the command used for the autonomous period
         autonomousCommand = new ExampleCommand();
-        MFP = new Victor(1);
-        MRP = new Victor(2);
-        MFS = new Victor(3);
-        MRS = new Victor(4);
+        MFP = new TalonSRX(1);
+        MRP = new TalonSRX(2);
+        MFS = new TalonSRX(3);
+        MRS = new TalonSRX(4);
         drive = new RobotDrive(MFP, MRP, MFS, MRS);
-        left = new Joystick(1);
-        right = new Joystick(2);
+        port = new Joystick(1);
+        starboard = new Joystick(2);
     }
-	
+    
 	public void disabledPeriodic() {
 		Scheduler.getInstance().run();
 	}
@@ -83,6 +84,7 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
+        drive.tankDrive(port, starboard);
     }
     
     /**

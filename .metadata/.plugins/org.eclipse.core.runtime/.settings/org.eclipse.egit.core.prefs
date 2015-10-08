@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=/Volumes/MAX M/Robotics/FRC Java Workspace/.git\:E\:\\Robotics\\FRC Java Workspace\\.git;\:
-RepositorySearchDialogSearchPath=/Volumes/MAX M/Robotics/FRC Java Workspace
+GitRepositoriesView.GitDirectories=/Volumes/MAX M/Robotics/FRC Java Workspace/.git\:E\:\\Robotics\\FRC Java Workspace\\.git;\:;E\:\\Robotics\\FRC Java Workspace\\.git;
+RepositorySearchDialogDeepSearch=true
+RepositorySearchDialogSearchPath=E\:\\Robotics\\FRC Java Workspace
 eclipse.preferences.version=1
