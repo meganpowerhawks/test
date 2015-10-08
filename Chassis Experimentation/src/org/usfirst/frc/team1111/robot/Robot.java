@@ -37,10 +37,10 @@ public class Robot extends IterativeRobot {
 		oi = new OI();
         // instantiate the command used for the autonomous period
         autonomousCommand = new ExampleCommand();
-        MFP = new TalonSRX(1);
-        MRP = new TalonSRX(2);
-        MFS = new TalonSRX(3);
-        MRS = new TalonSRX(4);
+        MFP = new TalonSRX(47);
+        MRP = new TalonSRX(57);
+        MFS = new TalonSRX(46);
+        MRS = new TalonSRX(51);
         drive = new RobotDrive(MFP, MRP, MFS, MRS);
         port = new Joystick(1);
         starboard = new Joystick(2);
